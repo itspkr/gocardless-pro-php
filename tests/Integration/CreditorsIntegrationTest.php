@@ -41,6 +41,7 @@ class CreditorsIntegrationTest extends IntegrationTestBase
         $this->assertEquals($body->mandate_imports_enabled, $response->mandate_imports_enabled);
         $this->assertEquals($body->merchant_responsible_for_notifications, $response->merchant_responsible_for_notifications);
         $this->assertEquals($body->name, $response->name);
+        $this->assertEquals($body->payout_currencies, $response->payout_currencies);
         $this->assertEquals($body->postal_code, $response->postal_code);
         $this->assertEquals($body->region, $response->region);
         $this->assertEquals($body->scheme_identifiers, $response->scheme_identifiers);
@@ -87,6 +88,7 @@ class CreditorsIntegrationTest extends IntegrationTestBase
         $this->assertEquals($body->mandate_imports_enabled, $response->mandate_imports_enabled);
         $this->assertEquals($body->merchant_responsible_for_notifications, $response->merchant_responsible_for_notifications);
         $this->assertEquals($body->name, $response->name);
+        $this->assertEquals($body->payout_currencies, $response->payout_currencies);
         $this->assertEquals($body->postal_code, $response->postal_code);
         $this->assertEquals($body->region, $response->region);
         $this->assertEquals($body->scheme_identifiers, $response->scheme_identifiers);
@@ -136,6 +138,7 @@ class CreditorsIntegrationTest extends IntegrationTestBase
             $this->assertEquals($body[$num]->mandate_imports_enabled, $record->mandate_imports_enabled);
             $this->assertEquals($body[$num]->merchant_responsible_for_notifications, $record->merchant_responsible_for_notifications);
             $this->assertEquals($body[$num]->name, $record->name);
+            $this->assertEquals($body[$num]->payout_currencies, $record->payout_currencies);
             $this->assertEquals($body[$num]->postal_code, $record->postal_code);
             $this->assertEquals($body[$num]->region, $record->region);
             $this->assertEquals($body[$num]->scheme_identifiers, $record->scheme_identifiers);
@@ -176,6 +179,7 @@ class CreditorsIntegrationTest extends IntegrationTestBase
         $this->assertEquals($body->mandate_imports_enabled, $response->mandate_imports_enabled);
         $this->assertEquals($body->merchant_responsible_for_notifications, $response->merchant_responsible_for_notifications);
         $this->assertEquals($body->name, $response->name);
+        $this->assertEquals($body->payout_currencies, $response->payout_currencies);
         $this->assertEquals($body->postal_code, $response->postal_code);
         $this->assertEquals($body->region, $response->region);
         $this->assertEquals($body->scheme_identifiers, $response->scheme_identifiers);
@@ -215,6 +219,7 @@ class CreditorsIntegrationTest extends IntegrationTestBase
         $this->assertEquals($body->mandate_imports_enabled, $response->mandate_imports_enabled);
         $this->assertEquals($body->merchant_responsible_for_notifications, $response->merchant_responsible_for_notifications);
         $this->assertEquals($body->name, $response->name);
+        $this->assertEquals($body->payout_currencies, $response->payout_currencies);
         $this->assertEquals($body->postal_code, $response->postal_code);
         $this->assertEquals($body->region, $response->region);
         $this->assertEquals($body->scheme_identifiers, $response->scheme_identifiers);

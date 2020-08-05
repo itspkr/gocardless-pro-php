@@ -26,6 +26,7 @@ namespace GoCardlessPro\Resources;
  * @property-read $mandate_imports_enabled
  * @property-read $merchant_responsible_for_notifications
  * @property-read $name
+ * @property-read $payout_currencies
  * @property-read $postal_code
  * @property-read $region
  * @property-read $scheme_identifiers
@@ -123,6 +124,11 @@ class Creditor extends BaseResource
      * The creditor's name.
      */
     protected $name;
+
+    /**
+     * The currencies that a merchant can have payouts paid out to.
+     */
+    protected $payout_currencies;
 
     /**
      * The creditor's postal code.
